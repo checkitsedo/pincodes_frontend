@@ -1,0 +1,39 @@
+{
+    "name": "checkitsedo/pincodes_frontend",
+    "type": "typo3-cms-extension",
+    "description": "This TYPO3 extension enables frontend users to add ext:form_pincodes items in the frontend.",
+	"license": "GPL-2.0-or-later",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "pin",
+        "pincode",
+        "frontend",
+        "fe_users"
+    ],
+    "authors": [
+        {
+            "name": "Dominik Senti",
+            "role": "Developer",
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/checkitsedo/pincodes_frontend/issues",
+        "source": "https://github.com/checkitsedo/pincode_frontend"
+    },
+    "require": {
+        "typo3/cms-core": "^10.4 || ^11.5",
+        "checkitsedo/form-pincodes": ">=1.0.0",
+        "georgringer/numbered-pagination": ">=1.0.1,<2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Checkitsedo\\PincodesFrontend\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "pincodes_frontend"
+        }
+   }
+}
